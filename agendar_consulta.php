@@ -1,7 +1,6 @@
- <!-- Desenvolvido por [Seu Nome] -->
-<!-- DATA [Data Atual] -->
-<!-- Professor: Luís Alberto Pires de Oliveira -->
-
+ <!-- Desenvolvido por Lucas De Carvalho Praxedes -->
+ <!-- DATA 22/10/2024-->
+ <!-- Professor: Luís Alberto Pires de Oliveira -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -39,7 +38,9 @@
             <button type="submit" class="btn btn-sm btn-danger">Agendar Consulta</button>
         </form>
         <br>
-        <a href="cadastrar_paciente.php" class="btn btn-sm btn-danger">Cadastrar Paciente</a>
+        <a href="cadastrar_paciente.php" class="btn btn-sm btn-danger">Voltar pro cadastrado</a>
+        <a href="consultas_marcadas.php" class="btn btn-sm btn-danger"> verificar consuklta</a>
+
     </div>
 </body>
 </html>

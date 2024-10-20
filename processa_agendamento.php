@@ -1,5 +1,8 @@
+ <!-- Desenvolvido por Lucas De Carvalho Praxedes -->
+ <!-- DATA 22/10/2024-->
+ <!-- Professor: Luís Alberto Pires de Oliveira -->
 <?php
-require 'conexao.php'; // Conexão com o banco de dados
+require 'conexao.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome_paciente = $_POST['nome_paciente'];

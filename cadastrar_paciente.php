@@ -1,7 +1,6 @@
- <!-- Desenvolvido por [Seu Nome] -->
-<!-- DATA [Data Atual] -->
-<!-- Professor: Luís Alberto Pires de Oliveira -->
-
+ <!-- Desenvolvido por Lucas De Carvalho Praxedes -->
+ <!-- DATA 22/10/2024-->
+ <!-- Professor: Luís Alberto Pires de Oliveira -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,7 +16,7 @@
         <?php if (isset($_GET['sucesso'])): ?>
             <div class="alert alert-success"><?php echo $_GET['sucesso']; ?></div>
         <?php endif; ?>
-        
+
         <form action="processa_cadastro_paciente.php" method="POST">
             <div class="form-group">
                 <label for="nome">Nome</label>
