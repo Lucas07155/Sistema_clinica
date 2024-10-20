@@ -17,11 +17,7 @@
         <?php if (isset($_GET['sucesso'])): ?>
             <div class="alert alert-success"><?php echo $_GET['sucesso']; ?></div>
         <?php endif; ?>
-
-        <?php if (isset($_GET['erro'])): ?>
-            <div class="alert alert-danger"><?php echo $_GET['erro']; ?></div>
-        <?php endif; ?>
-
+        
         <form action="processa_cadastro_paciente.php" method="POST">
             <div class="form-group">
                 <label for="nome">Nome</label>

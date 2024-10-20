@@ -13,9 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($sql->execute([$nome, $data_nascimento, $email, $telefone, $endereco, $sexo])) {
         header("Location: cadastrar_paciente.php?sucesso=" . urlencode("Paciente cadastrado com sucesso!"));
         exit;
-    } else {
-        header("Location: cadastrar_paciente.php?erro=" . urlencode("Erro ao cadastrar paciente."));
-        exit;
-    }
+    } 
 }
 ?>
