@@ -1,6 +1,7 @@
- <!-- Desenvolvido por Lucas De Carvalho Praxedes -->
+<!-- Desenvolvido por Lucas De Carvalho Praxedes -->
  <!-- DATA 22/10/2024-->
  <!-- Professor: Luís Alberto Pires de Oliveira -->
+  
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,15 +14,12 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center mb-4">AGENDAR CONSULTA</h1>
-        
         <?php if (isset($_GET['sucesso'])): ?>
             <div class="alert alert-success"><?php echo $_GET['sucesso']; ?></div>
         <?php endif; ?>
-
         <?php if (isset($_GET['erro'])): ?>
-            <div class="alert alert-erro"><?php echo $_GET['erro']; ?></div>
+            <div class="alert alert-danger"><?php echo $_GET['erro']; ?></div>
         <?php endif; ?>
-
         <form action="processa_agendamento.php" method="POST">
             <div class="form-group">
                 <label for="nome_paciente">Nome do Paciente</label>
@@ -38,9 +36,8 @@
             <button type="submit" class="btn btn-sm btn-danger">Agendar Consulta</button>
         </form>
         <br>
-        <a href="cadastrar_paciente.php" class="btn btn-sm btn-danger">Voltar pro cadastrado</a>
-        <a href="consultas_marcadas.php" class="btn btn-sm btn-danger"> verificar consuklta</a>
-
+        <a href="cadastrar_paciente.php" class="btn btn-sm btn-danger">Voltar ao Cadastro</a>
+        <a href="consultas_marcadas.php" class="btn btn-sm btn-danger">Ver Consultas Marcadas</a>
     </div>
 </body>
 </html>

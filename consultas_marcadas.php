@@ -1,12 +1,11 @@
- <!-- Desenvolvido por Lucas De Carvalho Praxedes -->
+<!-- Desenvolvido por Lucas De Carvalho Praxedes -->
  <!-- DATA 22/10/2024-->
  <!-- Professor: Luís Alberto Pires de Oliveira -->
 <?php
 require 'conexao.php';
-
-$sql = $pdo->prepare("SELECT a.id, p.nome, a.data_consulta, a.hora_consulta FROM agendamentos a JOIN pacientes p ON a.id_paciente = p.id");
+$sql = $pdo->prepare("SELECT nome_paciente, data_consulta, hora_consulta FROM agendamentos");
 $sql->execute();
-$consultas = $sql->fetchAll(PDO::FETCH_ASSOC);
+$agendamentos = $sql->fetchAll(PDO::FETCH_ASSOC); 
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -30,17 +29,16 @@ $consultas = $sql->fetchAll(PDO::FETCH_ASSOC);
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($consultas as $consulta): ?>
+                    <?php foreach($agendamentos as $agendamento): ?> 
                         <tr>
-                            <td><?php echo $consulta['nome']; ?></td>
-                            <td><?php echo date('d/m/Y', strtotime($consulta['data_consulta'])); ?></td>
-                            <td><?php echo $consulta['hora_consulta']; ?></td>
+                            <td><?php echo $agendamento['nome_paciente']; ?></td>
+                            <td><?php echo date('d/m/Y', strtotime($agendamento['data_consulta'])); ?></td>
+                            <td><?php echo $agendamento['hora_consulta']; ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
         </div>
-        
         <div class="text-right mt-3">
             <a href="agendar_consulta.php" class="btn btn-sm btn-danger">Agendar Nova Consulta</a>
         </div>
