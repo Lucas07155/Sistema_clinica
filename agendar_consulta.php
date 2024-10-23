@@ -36,8 +36,7 @@
             <button type="submit" class="btn btn-sm btn-danger">Agendar Consulta</button>
         </form>
         <br>
-        <a href="cadastrar_paciente.php" class="btn btn-sm btn-danger">Voltar ao Cadastro</a>
-        <a href="consultas_marcadas.php" class="btn btn-sm btn-danger">Ver Consultas Marcadas</a>
+        <a href="cadastrar_paciente.php" class="btn btn-sm btn-danger">Voltar ao formulario de Cadastro</a>
     </div>
 </body>
 </html>

@@ -45,7 +45,7 @@
                     <option value="Outro">Outro</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-sm btn-danger">Salvar Paciente</button>
+            <button type="submit" class="btn btn-sm btn-danger">Salval Paciente</button>
         </form>
         <br>
         <a href="agendar_consulta.php" class="btn btn-sm btn-danger">Agendar Consulta</a>
