@@ -1,4 +1,4 @@
- <!-- Desenvolvido por Lucas De Carvalho Praxedes -->
+  <!-- Desenvolvido por Lucas De Carvalho Praxedes -->
  <!-- DATA 22/10/2024-->
  <!-- Professor: Luís Alberto Pires de Oliveira -->
 <!DOCTYPE html>
@@ -45,7 +45,7 @@
                     <option value="Outro">Outro</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-sm btn-danger">Salval Paciente</button>
+            <button type="submit" class="btn btn-sm btn-danger">Salvar Paciente</button>
         </form>
         <br>
         <a href="agendar_consulta.php" class="btn btn-sm btn-danger">Agendar Consulta</a>

@@ -1,4 +1,4 @@
-<!-- Desenvolvido por Lucas De Carvalho Praxedes -->
+ <!-- Desenvolvido por Lucas De Carvalho Praxedes -->
  <!-- DATA 22/10/2024-->
  <!-- Professor: Luís Alberto Pires de Oliveira -->
   
@@ -36,7 +36,8 @@
             <button type="submit" class="btn btn-sm btn-danger">Agendar Consulta</button>
         </form>
         <br>
-        <a href="cadastrar_paciente.php" class="btn btn-sm btn-danger">Voltar ao formulario de Cadastro</a>
+        <a href="cadastrar_paciente.php" class="btn btn-sm btn-danger">Voltar ao Cadastro</a>
+        <a href="consultas_marcadas.php" class="btn btn-sm btn-danger">Ver Consultas Marcadas</a>
     </div>
 </body>
 </html>

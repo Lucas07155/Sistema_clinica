@@ -1,9 +1,8 @@
  <!-- Desenvolvido por Lucas De Carvalho Praxedes -->
-<!-- DATA 22/10/2024 -->
-<!-- Professor: Luís Alberto Pires de Oliveira -->
+ <!-- DATA 22/10/2024-->
+ <!-- Professor: Luís Alberto Pires de Oliveira -->
 <?php
 require 'conexao.php';
-
 $sql = $pdo->prepare("SELECT nome_paciente, data_consulta, hora_consulta FROM agendamentos");
 $sql->execute();
 $agendamentos = $sql->fetchAll(PDO::FETCH_ASSOC); 
@@ -27,7 +26,6 @@ $agendamentos = $sql->fetchAll(PDO::FETCH_ASSOC);
                         <th>Nome do Paciente</th>
                         <th>Data da Consulta</th>
                         <th>Hora da Consulta</th>
-                        <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,14 +34,13 @@ $agendamentos = $sql->fetchAll(PDO::FETCH_ASSOC);
                             <td><?php echo $agendamento['nome_paciente']; ?></td>
                             <td><?php echo date('d/m/Y', strtotime($agendamento['data_consulta'])); ?></td>
                             <td><?php echo $agendamento['hora_consulta']; ?></td>
-                            <td>
-                                <a href="editar_paciente.php?nome_paciente=<?php echo urlencode($agendamento['nome_paciente']); ?>" class="btn btn-sm btn-danger">Editar</a>
-                                <a href="excluir_paciente.php?nome_paciente=<?php echo urlencode($agendamento['nome_paciente']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Tem certeza que deseja excluir esta consulta?')">Excluir</a>
-                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
+        </div>
+        <div class="text-right mt-3">
+            <a href="cadastrar_paciente.php" class="btn btn-sm btn-danger">Voltar ao Cadastro</a>
         </div>
     </div>
 </body>
