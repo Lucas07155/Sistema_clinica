@@ -4,7 +4,7 @@
 <?php
 require 'conexao.php'; 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome_paciente = $_POST['nome_paciente']; // Captura o nome do paciente
+    $nome_paciente = $_POST['nome_paciente'];
     $data_consulta = $_POST['data_consulta'];
     $hora_consulta = $_POST['hora_consulta'];
     $sql = $pdo->prepare("SELECT nome FROM pacientes WHERE nome = ?");

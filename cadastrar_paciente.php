@@ -1,7 +1,8 @@
   <!-- Desenvolvido por Lucas De Carvalho Praxedes -->
  <!-- DATA 22/10/2024-->
  <!-- Professor: Luís Alberto Pires de Oliveira -->
-<!DOCTYPE html>
+   
+<!DOCTYPE html> 
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +16,8 @@
         <h1 class="text-center mb-4">CADASTRAR PACIENTE</h1>
         <?php if (isset($_GET['sucesso'])): ?>
             <div class="alert alert-success"><?php echo $_GET['sucesso']; ?></div>
+        <?php elseif (isset($_GET['erro'])): ?>
+            <div class="alert alert-danger"><?php echo $_GET['erro']; ?></div>
         <?php endif; ?>
         <form action="processa_cadastro_paciente.php" method="POST">
             <div class="form-group">
