@@ -1,11 +1,17 @@
-body {
-    background-image: url('clinica02.jpg');
-    background-size: cover; 
-   
-}
-.container {
-    background-color: rgba(8, 109, 116, 0.637);
-    padding: 20px;
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
+body {     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ded5e773, rgb(20, 20, 20));
+    background-size: cover;
+    }
+    .container {
+        background-color: rgba(128, 128, 128, 0.637);
+        padding: 20px;
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(241, 3, 3, 0.1); 
+    }
